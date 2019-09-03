@@ -17,7 +17,7 @@ Resources:
   ProviderCreator:
     Type: AWS::Lambda::Function
     Properties:
-      Runtime: python2.7
+      Runtime: python3
       Handler: index.lambda_handler
       MemorySize: 128
       Role: !GetAtt ProviderCreatorLambdaExecutionRole.Arn
